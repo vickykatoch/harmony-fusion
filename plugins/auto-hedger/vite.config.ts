@@ -1,9 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [react()],
   build: {
+    outDir: resolve(__dirname, '../../dist/packages/auto-hedger'),
+    emptyOutDir: true,
     lib: {
       entry: 'src/index.ts',
       name: 'MyOrgUi',

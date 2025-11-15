@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [react()],
@@ -19,6 +20,8 @@ export default defineConfig({
         },
       },
     },
+    outDir: resolve(__dirname, '../../dist/packages/uicore'),
+    emptyOutDir: true,
   },
   //   test: {
   //     globals: true,

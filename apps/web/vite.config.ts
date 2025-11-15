@@ -1,9 +1,14 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'node:path';
+import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [react()],
+  build: {
+    outDir: resolve(__dirname, '../../dist/apps/web'),
+    emptyOutDir: true,
+  },
   resolve: {
     alias: {
       '@fusion/button': path.resolve(__dirname, '../../packages/button/src'),

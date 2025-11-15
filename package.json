@@ -30,12 +30,12 @@
   "homepage": "https://github.com/vickykatoch/harmony-fusion#readme",
   "devDependencies": {
     "@types/node": "^20.19.5",
-    "@vitejs/plugin-react": "^5.1.1",
+    "@vitejs/plugin-react": "^5.1.0",
     "prettier": "^3.6.2",
     "sass-embedded": "^1.93.3",
     "typescript": "^5.9.3",
     "vite": "^7.2.2",
-    "vitest": "^4.0.9"
+    "vitest": "^4.0.8"
   },
   "dependencies": {
     "@fontsource/open-sans": "^5.2.7",
@@ -44,6 +44,7 @@
     "@salt-ds/icons": "^1.15.0",
     "@salt-ds/theme": "^1.36.0",
     "react-resizable-panels": "^3.0.6",
-    "react-router": "^7.9.6"
+    "react-router": "^7.9.6",
+    "vite-plugin-dts": "^4.5.4"
   }
 }
