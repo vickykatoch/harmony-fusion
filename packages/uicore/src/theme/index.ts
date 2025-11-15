@@ -1,1 +1,2 @@
-export * from './FusionThemeProvider';
+export * from './AppProvider';
+export { useFusionTheme } from './FusionThemeProvider';

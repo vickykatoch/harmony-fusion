@@ -38,6 +38,12 @@
     "vitest": "^4.0.9"
   },
   "dependencies": {
+    "@fontsource/open-sans": "^5.2.7",
+    "@fontsource/pt-mono": "^5.2.8",
+    "@salt-ds/core": "^1.53.0",
+    "@salt-ds/icons": "^1.15.0",
+    "@salt-ds/theme": "^1.36.0",
+    "react-resizable-panels": "^3.0.6",
     "react-router": "^7.9.6"
   }
 }

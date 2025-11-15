@@ -1,26 +1,49 @@
-import { createContext, ReactNode, useContext, useState } from 'react';
+import { SaltProviderNext } from '@salt-ds/core';
+import { createContext, ReactNode, useCallback, useContext, useState } from 'react';
 
 interface ThemeContextType {
   theme: 'light' | 'dark';
   toggleTheme: () => void;
+  setTheme: (theme: 'light' | 'dark') => void;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-export const useTheme = () => {
+export const useFusionTheme = () => {
   const context = useContext(ThemeContext);
   if (!context) {
-    throw new Error('useTheme must be used within a ThemeProvider');
+    throw new Error('useFusionTheme must be used within a FusionThemeProvider');
   }
   return context;
 };
+interface Props {
+  children: ReactNode;
+  theme?: 'light' | 'dark';
+}
+export const FusionThemeProvider = ({ children, theme }: Props) => {
+  const [currentTheme, setTheme] = useState<'light' | 'dark'>(theme || 'dark');
 
-export const FusionThemeProvider = ({ children }: { children: ReactNode }) => {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
-
-  const toggleTheme = () => {
+  const toggleTheme = useCallback(() => {
     setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
-  };
+  }, []);
 
-  return <ThemeContext.Provider value={{ theme, toggleTheme }}>{children}</ThemeContext.Provider>;
+  const setThemeValue = useCallback((theme: 'light' | 'dark') => {
+    setTheme(theme);
+  }, []);
+
+  return (
+    <ThemeContext.Provider value={{ theme: currentTheme, toggleTheme, setTheme: setThemeValue }}>
+      <SaltProviderNext
+        density="medium"
+        mode={currentTheme}
+        applyClassesTo="root"
+        accent="teal"
+        corner="rounded"
+        headingFont="Amplitude"
+        actionFont="Amplitude"
+      >
+        {children}
+      </SaltProviderNext>
+    </ThemeContext.Provider>
+  );
 };

@@ -2,3 +2,9 @@
   width: 100vw;
   height: 100vh;
 }
+
+body {
+  background-color: var(--salt-container-primary-background);
+  color: var(--salt-content-primary-foreground);
+  font-family: var(--salt-typography-fontFamily);
+}
