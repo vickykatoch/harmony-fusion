@@ -1,5 +1,5 @@
-import { Button } from '@hf/button';
-import Host from '@hf/auto-hedger';
+import { Button } from '@fusion/button';
+import Host from '@fusion/auto-hedger';
 import { FusionThemeProvider } from '@fusion/uicore';
 
 export default function App() {

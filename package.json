@@ -1,7 +1,7 @@
 {
-  "name": "harmony-fusion",
+  "name": "fusion",
   "version": "1.0.0",
-  "description": "Harmony Fusion is a modular application platform that brings together independent plugins into one unified experience. It enables seamless composition, dynamic loading, and smooth communication between UI and server modules across your ecosystem",
+  "description": "Fusion is a modular application platform that brings together independent plugins into one unified experience. It enables seamless composition, dynamic loading, and smooth communication between UI and server modules across your ecosystem",
   "main": "index.js",
   "private": true,
   "workspaces": [

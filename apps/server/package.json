@@ -1,7 +1,7 @@
 {
-  "name": "harmony-fusion-server",
+  "name": "fusion-server",
   "version": "1.0.0",
-  "description": "Harmony Fusion Server is a module that handles server-side logic and communication for the Harmony Fusion platform.",
+  "description": "Fusion Server is a module that handles server-side logic and communication for the Fusion platform.",
   "private": true,
   "type": "module",
   "scripts": {

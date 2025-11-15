@@ -13,11 +13,9 @@
     "noEmit": false,
     "baseUrl": ".",
     "paths": {
-      "@hf/button": ["packages/button/src/index.ts"],
-      "@hf/auto-hedger": ["plugins/auto-hedger/src/index.ts"],
+      "@fusion/button": ["packages/button/src/index.ts"],
+      "@fusion/auto-hedger": ["plugins/auto-hedger/src/index.ts"],
       "@fusion/uicore": ["packages/uicore/src/index.ts"]
-      // "@harmony-utils/*": ["packages/utils/src/*"],
-      // "@harmony-plugin-wsg/*": ["plugins/web-socket-gateway/src/*"]
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "harmony-fusion-web",
+  "name": "fusion-web",
   "version": "1.0.0",
   "description": "Harmony Fusion Web is a module that handles client-side logic and presentation for the Harmony Fusion platform.",
   "private": true,

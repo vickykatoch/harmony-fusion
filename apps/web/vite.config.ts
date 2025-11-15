@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@hf/button': path.resolve(__dirname, '../../packages/button/src'),
-      '@hf/auto-hedger': path.resolve(__dirname, '../../plugins/auto-hedger/src'),
+      '@fusion/button': path.resolve(__dirname, '../../packages/button/src'),
+      '@fusion/auto-hedger': path.resolve(__dirname, '../../plugins/auto-hedger/src'),
       '@fusion/uicore': path.resolve(__dirname, '../../packages/uicore/src'),
     },
   },
