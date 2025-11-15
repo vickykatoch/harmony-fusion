@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": false,
+    "noEmit": false,
+    "baseUrl": ".",
+    "paths": {
+      "@hf/button": ["packages/button/src/index.ts"],
+      "@hf/auto-hedger": ["plugins/auto-hedger/src/index.ts"],
+      "@fusion/uicore": ["packages/uicore/src/index.ts"]
+      // "@harmony-utils/*": ["packages/utils/src/*"],
+      // "@harmony-plugin-wsg/*": ["plugins/web-socket-gateway/src/*"]
+    }
+  }
+}

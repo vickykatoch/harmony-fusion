@@ -1,0 +1,17 @@
+{
+  "name": "harmony-fusion-server",
+  "version": "1.0.0",
+  "description": "Harmony Fusion Server is a module that handles server-side logic and communication for the Harmony Fusion platform.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "test": "echo \"(optional) add Vitest or node tests here\" && exit 0",
+    "lint": "echo \"no lint configured yet\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "harmony-fusion",
+  "version": "1.0.0",
+  "description": "Harmony Fusion is a modular application platform that brings together independent plugins into one unified experience. It enables seamless composition, dynamic loading, and smooth communication between UI and server modules across your ecosystem",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "plugins/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "dev:webui": "npm run dev --workspace apps/web",
+    "dev:server": "npm run dev --workspace apps/server",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vickykatoch/harmony-fusion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vickykatoch/harmony-fusion/issues"
+  },
+  "homepage": "https://github.com/vickykatoch/harmony-fusion#readme",
+  "devDependencies": {
+    "@types/node": "^20.19.5",
+    "@vitejs/plugin-react": "^5.1.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.2",
+    "vitest": "^4.0.9"
+  },
+  "dependencies": {
+    "react-router": "^7.9.6"
+  }
+}
