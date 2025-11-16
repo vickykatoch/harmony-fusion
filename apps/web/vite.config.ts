@@ -11,6 +11,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
+      '@images': path.resolve(__dirname, 'src/assets/images'),
       '@fusion/button': path.resolve(__dirname, '../../packages/button/src'),
       '@fusion/auto-hedger': path.resolve(__dirname, '../../plugins/auto-hedger/src'),
       '@fusion/uicore': path.resolve(__dirname, '../../packages/uicore/src'),
